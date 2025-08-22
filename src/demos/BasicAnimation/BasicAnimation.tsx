@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import "./BasicAnimation.css";
 
-export default function BasicAnimation() {
+export const BasicAnimation = () => {
   const boxRef = useRef<HTMLDivElement | null>(null);
   const circleRef = useRef<HTMLDivElement | null>(null);
 
@@ -89,4 +89,4 @@ export default function BasicAnimation() {
       </p>
     </div>
   );
-}
+};

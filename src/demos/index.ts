@@ -1,1 +1,1 @@
-export { default as BasicAnimation } from "./BasicAnimation/BasicAnimation";
+export { BasicAnimation } from "./BasicAnimation/BasicAnimation";
