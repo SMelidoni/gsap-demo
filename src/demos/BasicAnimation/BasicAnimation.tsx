@@ -21,6 +21,7 @@ export const BasicAnimation = () => {
 
   const playTo = () => {
     if (!boxRef.current) return;
+    gsap.killTweensOf(boxRef.current);
     gsap.to(boxRef.current, {
       x: 400,
       rotation: 360,
@@ -32,6 +33,7 @@ export const BasicAnimation = () => {
 
   const playFrom = () => {
     if (!boxRef.current) return;
+    gsap.killTweensOf(boxRef.current);
     gsap.from(boxRef.current, {
       x: -400,
       rotation: -180,
@@ -43,6 +45,7 @@ export const BasicAnimation = () => {
 
   const playFromTo = () => {
     if (!boxRef.current) return;
+    gsap.killTweensOf(boxRef.current);
     gsap.fromTo(
       boxRef.current,
       { x: 0, scale: 0.6, backgroundColor: "#ffd8a8" },
