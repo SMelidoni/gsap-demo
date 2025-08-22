@@ -89,7 +89,7 @@ export const BasicAnimation = () => {
             rotating one element at a time
           </li>
           <li>
-            <strong>Property changes:</strong> Animating colors, opacity, size,
+            <strong>Property changes:</strong> Animating colours, opacity, size,
             or position
           </li>
         </ul>
