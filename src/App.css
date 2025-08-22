@@ -2,7 +2,8 @@
   background: #18120a;
   color: #fff;
   display: flex;
-  min-height: 100vh;
+  height: 100dvh;
+  width: 100vw;
 }
 
 .sidebar {
@@ -44,6 +45,7 @@
   background: #202127;
   flex: 1;
   padding: 2rem;
+  /* Remove min-height so it stretches as a flex child */
 }
 
 .demo-placeholder {
