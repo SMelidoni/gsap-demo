@@ -62,12 +62,14 @@ export const BasicAnimation = () => {
   const reset = () => {
     if (!boxRef.current) return;
     gsap.killTweensOf(boxRef.current);
-    gsap.set(boxRef.current, {
-      clearProps: "all",
+    gsap.to(boxRef.current, {
       x: 0,
       y: 0,
       rotation: 0,
       scale: 1,
+      backgroundColor: "#ffd8a8", // Reset to original color
+      duration: 0.8,
+      ease: "power2.out",
     });
   };
 
@@ -89,14 +91,6 @@ export const BasicAnimation = () => {
           <li>
             <strong>Property changes:</strong> Animating colors, opacity, size,
             or position
-          </li>
-          <li>
-            <strong>Simple state transitions:</strong> Hover effects, show/hide
-            animations
-          </li>
-          <li>
-            <strong>Quick prototyping:</strong> Testing animation ideas before
-            building complex sequences
           </li>
         </ul>
       </div>
