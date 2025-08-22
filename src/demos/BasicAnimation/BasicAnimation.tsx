@@ -70,6 +70,67 @@ export const BasicAnimation = () => {
 
   return (
     <div className="basic-demo">
+      <div className="description">
+        <h2>What is Basic Animation?</h2>
+        <p>
+          Basic animations are the foundation of GSAP. They involve moving
+          elements from one state to another over time using tweens (transitions
+          between values).
+        </p>
+        <h3>When to use Basic Animation:</h3>
+        <ul>
+          <li>
+            <strong>Single element animations:</strong> Moving, scaling, or
+            rotating one element at a time
+          </li>
+          <li>
+            <strong>Property changes:</strong> Animating colors, opacity, size,
+            or position
+          </li>
+          <li>
+            <strong>Simple state transitions:</strong> Hover effects, show/hide
+            animations
+          </li>
+          <li>
+            <strong>Quick prototyping:</strong> Testing animation ideas before
+            building complex sequences
+          </li>
+        </ul>
+      </div>
+
+      <div className="method-explanations">
+        <h3>Animation Methods:</h3>
+        <div className="methods">
+          <div className="method">
+            <h4>
+              <code>gsap.to()</code>
+            </h4>
+            <p>
+              Animates <strong>TO</strong> the specified values from the current
+              state. Most commonly used method.
+            </p>
+          </div>
+          <div className="method">
+            <h4>
+              <code>gsap.from()</code>
+            </h4>
+            <p>
+              Animates <strong>FROM</strong> the specified values to the current
+              state. Great for entrance animations.
+            </p>
+          </div>
+          <div className="method">
+            <h4>
+              <code>gsap.fromTo()</code>
+            </h4>
+            <p>
+              Animates <strong>FROM</strong> specific values <strong>TO</strong>{" "}
+              other specific values. Most control over start and end states.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div className="controls">
         <button onClick={playTo}>to()</button>
         <button onClick={playFrom}>from()</button>
@@ -85,7 +146,7 @@ export const BasicAnimation = () => {
       </div>
 
       <p className="hint">
-        Try each button to see how GSAP to, from, and fromTo behave.
+        Try each button to see how GSAP to, from, and fromTo behave differently.
       </p>
     </div>
   );

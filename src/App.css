@@ -2,7 +2,6 @@
   background: #18120a;
   color: #fff;
   display: flex;
-  height: 100dvh;
   width: 100vw;
 }
 
@@ -45,7 +44,11 @@
   background: #202127;
   flex: 1;
   padding: 2rem;
-  /* Remove min-height so it stretches as a flex child */
+}
+
+.main-content h1 {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .demo-placeholder {

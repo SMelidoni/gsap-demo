@@ -4,6 +4,79 @@
   max-width: 1200px;
 }
 
+.description {
+  background: #18191c;
+  border-radius: 12px;
+  color: #fff;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.description h2 {
+  color: #ffb86b;
+  margin-top: 0;
+}
+
+.description h3 {
+  color: #ffb86b;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.description ul {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.description li {
+  margin-bottom: 0.5rem;
+}
+
+.description strong {
+  color: #ffb86b;
+}
+
+.method-explanations {
+  margin-bottom: 2rem;
+}
+
+.method-explanations h3 {
+  color: #ffb86b;
+  margin-bottom: 1rem;
+}
+
+.methods {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.method {
+  background: #18191c;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.method h4 {
+  color: #c8a8ff;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.method code {
+  background: #202127;
+  border-radius: 4px;
+  color: #c8a8ff;
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.4rem;
+}
+
+.method p {
+  margin: 0;
+  opacity: 0.9;
+}
+
 .controls {
   display: flex;
   flex-wrap: wrap;
