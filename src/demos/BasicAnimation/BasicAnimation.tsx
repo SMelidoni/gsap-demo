@@ -67,7 +67,7 @@ export const BasicAnimation = () => {
       y: 0,
       rotation: 0,
       scale: 1,
-      backgroundColor: "#ffd8a8", // Reset to original color
+      backgroundColor: "#ffd8a8",
       duration: 0.8,
       ease: "power2.out",
     });
@@ -103,8 +103,8 @@ export const BasicAnimation = () => {
               <code>gsap.to()</code>
             </h4>
             <p>
-              Animates <strong>TO</strong> the specified values from the current
-              state. Most commonly used method.
+              Animates an element <strong>to</strong> new values. Start from
+              where it is now, end at the values you specify.
             </p>
           </div>
           <div className="method">
@@ -112,8 +112,8 @@ export const BasicAnimation = () => {
               <code>gsap.from()</code>
             </h4>
             <p>
-              Animates <strong>FROM</strong> the specified values to the current
-              state. Great for entrance animations.
+              Animates an element <strong>from</strong> temporary values back to
+              its current position. Useful for "fly-in" effects.
             </p>
           </div>
           <div className="method">
@@ -121,8 +121,9 @@ export const BasicAnimation = () => {
               <code>gsap.fromTo()</code>
             </h4>
             <p>
-              Animates <strong>FROM</strong> specific values <strong>TO</strong>{" "}
-              other specific values. Most control over start and end states.
+              Animates <strong>from</strong> one set of values{" "}
+              <strong>to</strong> another. You control both the starting point
+              and destination.
             </p>
           </div>
         </div>
@@ -137,14 +138,14 @@ export const BasicAnimation = () => {
         </button>
       </div>
 
+      <p className="hint">
+        Try each button to see how GSAP to, from, and fromTo behave differently.
+      </p>
+
       <div className="stage">
         <div ref={boxRef} className="box" />
         <div ref={circleRef} className="circle" />
       </div>
-
-      <p className="hint">
-        Try each button to see how GSAP to, from, and fromTo behave differently.
-      </p>
     </div>
   );
 };
