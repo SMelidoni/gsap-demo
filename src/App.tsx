@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import "./App.css";
 
 const demos = [
@@ -15,6 +15,10 @@ const demos = [
 
 function App() {
   const [selected, setSelected] = useState(demos[0].key);
+  const selectedDemo = useMemo(
+    () => demos.find((d) => d.key === selected),
+    [selected]
+  );
 
   return (
     <div className="app-container">
@@ -33,7 +37,7 @@ function App() {
         </ul>
       </aside>
       <main className="main-content">
-        <h1>{demos.find((d) => d.key === selected)?.label}</h1>
+        <h1>{selectedDemo?.label}</h1>
         <div className="demo-placeholder">
           Select a demo from the menu to view it here.
         </div>
