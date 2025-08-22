@@ -18,6 +18,10 @@ GSAP is a JavaScript animation library used for high-performance and complex UI 
 - **Draggable**: Making elements draggable (with GSAP plugin)
 - **Motion Path**: Animating along custom paths
 
+### Requirements
+
+- **Node.js v20 or higher is required**. The project will not run on earlier versions.
+
 ### To run locally
 
 ```bash
