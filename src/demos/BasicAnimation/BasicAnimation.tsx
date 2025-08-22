@@ -12,7 +12,7 @@ export const BasicAnimation = () => {
       gsap.to([boxRef.current, circleRef.current], {
         opacity: 1,
         y: 0,
-        duration: 0.6,
+        duration: 1,
         ease: "power2.out",
         stagger: 0.1,
       });
@@ -26,7 +26,7 @@ export const BasicAnimation = () => {
       x: 400,
       rotation: 360,
       backgroundColor: "#ffb86b",
-      duration: 1.2,
+      duration: 1,
       ease: "power3.inOut",
     });
   };
@@ -68,7 +68,7 @@ export const BasicAnimation = () => {
       rotation: 0,
       scale: 1,
       backgroundColor: "#ffd8a8",
-      duration: 0.8,
+      duration: 1,
       ease: "power2.out",
     });
   };
