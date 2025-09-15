@@ -65,7 +65,7 @@
 }
 
 .method code {
-  background: var(--color-bg-stage);
+  background: var(--color-bg-surface);
   border-radius: 4px;
   color: var(--color-purple);
   font-family: "Courier New", monospace;

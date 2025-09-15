@@ -1,6 +1,4 @@
 .app-container {
-  background: #18120a;
-  color: var(--color-text);
   display: flex;
 }
 
@@ -26,7 +24,7 @@
 
 .sidebar li {
   border-radius: 6px;
-  color: #fff;
+  color: var(--color-text);
   cursor: pointer;
   margin-bottom: 0.5rem;
   padding: 0.75rem 1rem;
@@ -40,7 +38,7 @@
 }
 
 .main-content {
-  background: #202127;
+  background: var(--color-bg-surface);
   flex: 1;
   padding: 2rem;
 }
