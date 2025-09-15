@@ -1,12 +1,11 @@
 .app-container {
   background: #18120a;
-  color: #fff;
+  color: var(--color-text);
   display: flex;
-  /* width removed to prevent horizontal overflow */
 }
 
 .sidebar {
-  background: #18191c;
+  background: var(--color-bg-dark);
   border-right: 1.5px solid rgba(255, 184, 107, 0.18);
   box-shadow: 2px 0 8px 0 rgba(255, 184, 107, 0.06);
   padding: 2rem 1rem;
@@ -14,7 +13,7 @@
 }
 
 .sidebar h2 {
-  color: #ffb86b;
+  color: var(--color-orange);
   font-size: 1.2rem;
   letter-spacing: 1px;
   margin-top: 0;
@@ -37,7 +36,7 @@
 .sidebar li.active,
 .sidebar li:hover {
   background: rgba(255, 184, 107, 0.18);
-  color: #ffb86b;
+  color: var(--color-orange);
 }
 
 .main-content {
@@ -52,9 +51,9 @@
 }
 
 .demo-placeholder {
-  background: #18191c;
+  background: var(--color-bg-dark);
   border-radius: 8px;
-  color: #ffd8a8;
+  color: var(--color-peach);
   margin-top: 2rem;
   padding: 2rem;
   text-align: center;

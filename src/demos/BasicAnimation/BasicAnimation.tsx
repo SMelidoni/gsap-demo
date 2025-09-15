@@ -6,6 +6,9 @@ export const BasicAnimation = () => {
   const boxRef = useRef<HTMLDivElement | null>(null);
   const circleRef = useRef<HTMLDivElement | null>(null);
 
+  const getVar = (name: string) =>
+    getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+
   useEffect(() => {
     if (boxRef.current && circleRef.current) {
       gsap.set([boxRef.current, circleRef.current], { opacity: 0, y: 20 });
@@ -26,7 +29,7 @@ export const BasicAnimation = () => {
     gsap.to(boxRef.current, {
       x: 400,
       rotation: 360,
-      backgroundColor: "#ffb86b",
+      backgroundColor: getVar("--color-orange"),
       duration: 1,
       ease: "power3.inOut",
     });
@@ -39,7 +42,6 @@ export const BasicAnimation = () => {
     gsap.from(boxRef.current, {
       x: -400,
       rotation: -180,
-      backgroundColor: "#8ecae6",
       duration: 1,
       ease: "back.out(1.4)",
     });
@@ -51,11 +53,11 @@ export const BasicAnimation = () => {
     gsap.killTweensOf(boxRef.current);
     gsap.fromTo(
       boxRef.current,
-      { x: 0, scale: 0.6, backgroundColor: "#ffd8a8" },
+      { x: 0, scale: 0.6, backgroundColor: getVar("--color-peach") },
       {
         x: 300,
         scale: 1,
-        backgroundColor: "#c8a8ff",
+        backgroundColor: getVar("--color-purple"),
         duration: 1,
         ease: "power2.out",
       }
@@ -70,7 +72,7 @@ export const BasicAnimation = () => {
       y: 0,
       rotation: 0,
       scale: 1,
-      backgroundColor: "#ffd8a8",
+      backgroundColor: getVar("--color-peach"),
       duration: 1,
       ease: "power2.out",
     });
