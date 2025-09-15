@@ -19,6 +19,7 @@ export const BasicAnimation = () => {
     }
   }, []);
 
+  // Moves the box to the right and rotates it.
   const playTo = () => {
     if (!boxRef.current) return;
     gsap.killTweensOf(boxRef.current);
@@ -31,6 +32,7 @@ export const BasicAnimation = () => {
     });
   };
 
+  // Animates the box from the left into its original position.
   const playFrom = () => {
     if (!boxRef.current) return;
     gsap.killTweensOf(boxRef.current);
@@ -43,6 +45,7 @@ export const BasicAnimation = () => {
     });
   };
 
+  // Animates the box from a smaller scale and left position to the right and full size.
   const playFromTo = () => {
     if (!boxRef.current) return;
     gsap.killTweensOf(boxRef.current);
