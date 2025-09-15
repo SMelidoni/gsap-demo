@@ -2,7 +2,7 @@
   background: #18120a;
   color: #fff;
   display: flex;
-  width: 100vw;
+  /* width removed to prevent horizontal overflow */
 }
 
 .sidebar {
