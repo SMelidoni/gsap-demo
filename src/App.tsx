@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import { BasicAnimation } from "./demos";
 
 const demos = [
   { key: "basic", label: "Basic Animation" },
@@ -15,6 +16,20 @@ const demos = [
 
 function App() {
   const [selected, setSelected] = useState(demos[0].key);
+
+  const renderDemo = () => {
+    switch (selected) {
+      case "basic":
+        return <BasicAnimation />;
+      default:
+        return (
+          <div className="demo-placeholder">
+            This demo is coming soon! Select a demo from the menu to view it
+            here.
+          </div>
+        );
+    }
+  };
 
   return (
     <div className="app-container">
@@ -34,9 +49,7 @@ function App() {
       </aside>
       <main className="main-content">
         <h1>{demos.find((d) => d.key === selected)?.label}</h1>
-        <div className="demo-placeholder">
-          Select a demo from the menu to view it here.
-        </div>
+        {renderDemo()}
       </main>
     </div>
   );

@@ -1,7 +1,17 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Poppins", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+
+  /* Global color variables */
+  --color-peach: #ffd8a8;
+  --color-orange: #ffb86b;
+  --color-purple: #c8a8ff;
+  --color-bg-dark: #18191c;
+  --color-bg-surface: #202127;
+  --color-text: #fff;
+  --color-shadow: rgba(0, 0, 0, 0.3);
+  --color-shadow-circle: rgba(0, 0, 0, 0.2);
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -24,8 +34,6 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
