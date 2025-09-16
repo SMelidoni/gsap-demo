@@ -114,17 +114,17 @@
   align-items: center;
   background: var(--color-bg-dark);
   border-radius: 12px;
+  box-sizing: border-box;
   display: flex;
   gap: 2rem;
   justify-content: flex-start;
   margin: 2rem 0;
+  max-width: 100%;
   min-height: 250px;
   overflow-x: auto;
   overflow-y: visible;
   padding: 3rem;
   position: relative;
-  max-width: 100%;
-  box-sizing: border-box;
 }
 
 .box {
